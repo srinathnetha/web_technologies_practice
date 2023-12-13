@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PHONENUMBER VALIDATION</title>
+        <script>
+            function myfun()
+            {
+                var up=/^[a-zA-Z]{3,8}$/.test(a)
+                var pp=/^[7-9]{1}[0-9]{9}$/.test(b)
+                var a=document.getElementById("user_name").value
+                var b=document.getElementById("user_phone").value
+
+                if(up==false)
+                {
+                    document.getElementById("Message").innerHTML="Invalid username"
+                    if(pp==false)
+                    {
+                        document.getElementById("Message1").innerHTML="Invalid phonenumber"
+                        return false
+                    }
+                return false
+
+                }
+                if(pp==false)
+                {
+                    document.getElementById("Message1").innerHTML="Invalid phonenumber"
+                    return false
+                }
+                
+            }
+        </script>
+    </head>
+    <body style="background-color: antiquewhite;">
+        <div id="val">
+        <form onsubmit="return myfun()">
+            Username:
+            <input type="text" id="user_name" placeholder="eg:sachin">
+            <span id="Message"></span>
+            <br><br>
+            Phonenumber:
+            <input type="text" id="user_phone" placeholder="eg:9052986885">
+            <span id="Message1"></span>
+            <br><br>
+            <input type="submit" value="submit" style="font-size: 30px;" >
+        </form>
+        </div>
+        <style>
+            #val
+            {
+                border: 2px solid red;
+                background-color: aquamarine;
+                font-size: 30px;
+                font-family: cursive;
+                margin: 6%;
+                padding: top 40px;;
+
+            }
+        </style>
+    </body>
+</html>
+
+

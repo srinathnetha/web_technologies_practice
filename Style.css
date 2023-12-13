@@ -1,0 +1,16 @@
+h1{
+    font-size: 30px;
+    color: blue;
+    border: 5pt;
+}
+#p1{
+    color: blueviolet;
+    font-family: cursive;
+    text-decoration: underline;
+}
+p,pre{
+    color: chartreuse;
+}
+#msg{
+    color: burlywood;
+}
